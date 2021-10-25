@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bhavik Bhatia</title>
+</head>
+
+<body>
+    <!-- Our Nav Bar html-->
+
+    <!--Things to implement ->
+    1)Yellow and Black combination of website
+    2)Animated logo (Just show B then on hover Bhavik bhatia comes and goes)
+    3)On hover on Nav link or lists show a yellow line linearly passing
+    4)OPTIONAL --- On click with Javascript switch between Home page,aboutpage,projects page ,
+    Like hiding the other two with fade and only making one visible
+    5)https://www.minus99.com/
+    Make Toggle Nav bar like this on Top only for Mobile plus Laptop
+    6)On Nav list item hover make it gradient animation
+    7)OPTIONAL - Make Home background animated or Fetch a video from online or Local Video
+    8)Change the Scroll bar to like https://www.minus99.com/
+    9)Make mouse icon change like above mentioned site.
+    10)Keep Navbar Transparent
+    11)Add a liquid loader link https://www.youtube.com/watch?v=U-ePoM4EDXA
+    -->
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <!--LOGO-->
+            <!--𝘽𝙝𝙖𝙫𝙞𝙠 𝘽𝙝𝙖𝙩𝙞𝙖-->
+            <a href="#home" id="navbar__logo" class="sign">𝘽<span>𝙝𝙖𝙫𝙞𝙠</span><span>𝘽</span><span>𝙝𝙖𝙩𝙞𝙖</span>
+            </a>
+            <!--Toggle Bars-->
+            <div class="navbar__toggle">
+                <svg class="svgburg" width="55" height="53" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+                    <path class="path1" d="M1.5 7L27.5 33C27.5 33 30.5 36 36.5 40.5C42.5 45 48 33.5 41.5 33C35 32.5 2 33 2 33" stroke="white" stroke-width="2"/>
+                      
+                    <path class="path2" d="M2 33L28 7C28 7 33.5 1 37 1C40.5 1 43 6.20692 40 7C37 7.79308 1 7 1 7" stroke="white" stroke-width="2"/>
+                      
+                    <path class="mline" d="M1.5 20H28.5" stroke="white" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <!--Nav Items or list-->
+            <div class="navbar__menu_container">
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__link" id="home_page">Home
+                        <br><span></span>
+                    </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#about" class="navbar__link" id="about_page">About Me
+                        <br><span></span>
+                    </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#projects" class="navbar__link" id="projects_page">Projects
+                        <br><span></span>
+                    </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#download_cv" class="navbar__link" id="projects_page">Resume
+                        <br><span></span>
+                    </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--Home-->
+    <div class="main">
+        <div id="main_container">
+            <div class="main_content">
+                <h2>Adapt,Master,</h2>
+                <h1>Develop.</h1>
+                <p class="connect">Connections always make life easier.</p>
+
+                <!-- <a href="#contact_details" rel="modal:open"></a> -->
+                <button class="btn_contact">Connect</button>
+
+            </div>
+            <div class="img_main_container">
+                <img src="images/undraw_Lost_online_re_upmy.svg" alt="pic" class="img_svg">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- About Me -->
+    <div class="about_me">
+        <h1>About Me</h1>
+        <div class="card_container">
+            <div class="card">
+                <img src="images/undraw_programmer_imem.svg" alt="pic" class="card_svg_image">
+                <h2>Tech</h2>
+                <p>I am fond of <b>Native app development, android and also full stack web development.</b> In the period of my graduation and post graduation I have been and I am building countless projects with technologies and languages like <i style="color: orangered;">React, Node, Express, Firebase,Kotlin,Java
+                   and Countless front end web projects as well</i>, I believe in project based learning.
+                </p>
+                <button class="card_btn">Know More..</button>
+            </div>
+            <div class=" card ">
+                <img src="images/undraw_education_f8ru.svg " alt="pic " class="card_svg_image ">
+                <h2>Education</h2>
+                <p> I have graduated from the <b>University of Gujarat</b> while pursuing Bachelor's of science in Information Technology. While I am currently pursuing my Post Graduate from <b>GLS University</b>. Apart from this I am an active self learner.
+                </p>
+            </div>
+            <div class="card ">
+                <img src="images/undraw_working_remotely_jh40.svg " alt="pic " class="card_svg_image ">
+                <h2>Experience</h2>
+                <p>I have experience of working as a <b>full-time remote front-end developer</b> under a freelancer handling one of his client on full time basis.I worked with <i style="color: orangered; ">Html 5, Css 3, Javascript, Anime.js, UX UI</i> and
+                    developed front end for Virtual Events, Admin and Super Admin Dashboards and much more..
+                </p>
+                <button class="card_btn">Know More..</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project -->
+    <div class="project">
+        <h1>Projects</h1>
+        <div class="card_2_container">
+            <div class="card-2" title="Press">
+                <div class="content">
+                    <h1>01</h1>
+                    <h2>Teller App</h2>
+                    <p>A storytelling android app where you share short stories as playlists with the world. A user can search, follow and like other users content. <b>Tech used were Java, Firebase Realtime database, Firebase auth and storage.</b>
+                    </p>
+                    <a href="#" class="github_link">GitHub</a>
+                </div>
+            </div>
+            <div class="card-2" title="Press">
+                <div class="content">
+                    <h1>02</h1>
+                    <h2>Summer App</h2>
+                    <p>A Weather android app which fetch's your location and gives you all the weather information. User can view weather of any city around the globe. <b>I used Java, Weather API, Retrofit Library.</b>
+                    </p>
+                    <a href="#" class="github_link">GitHub</a>
+                </div>
+            </div>
+            <div class="card-2" title="Press">
+                <div class="content">
+                    <h1>03</h1>
+                    <h2>Travel Website</h2>
+                    <p>A responsive business based website built with html css javascript for a travel company.
+                    </p>
+                    <a href="#" class="github_link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Resume-->
+    <div class="resume">
+        <div id="cv_container">
+            <div class="img_cv_container">
+                <img src="images/undraw_Hiring_re_yk5n.svg" alt="pic" class="img_cv">
+            </div>
+            <div class="cv_content">
+                <h2>Download CV</h2>
+                <button class="btn_download">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_container">
+
+            <div class="social_icons">
+                <a href="https://www.linkedin.com/in/bhavik-bhatia-3a2036182" class="linkedln" target="_blank"><i class="fab fa-linkedin-in one"></i></a>
+                <a href="https://www.instagram.com/bhavik.bhatiaa/" class="insta" target="_blank"><i class="fab fa-instagram two"></i></a>
+            </div>
+            <div class="copyright">
+                <h4>© 2021 Bhavik Bhatia. All Rights Reserved.</h4>
+            </div>
+        </div>
+    </footer>
+
+    <div id="contact_details" class="modal">
+        <div class="modal_container">
+            <h1>Email</h1>
+            <p>bhavikbhatia9@gmail.com</p><br>
+            <h1>Contact</h1>
+            <p>7069096439</p><br>
+            <div class="social_icons2">
+                <a href="https://www.linkedin.com/in/bhavik-bhatia-3a2036182" class="linkedln" target="_blank"><i class="fab fa-linkedin-in one"></i></a>
+                <a href="https://www.instagram.com/bhavik.bhatiaa/" class="insta" target="_blank"><i class="fab fa-instagram two"></i></a>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <script async src="app.js "></script>
+    <script src="vanilla-tilt.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card-2"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+            reverse: true
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".card-2"));
+
+        // ---------------------------------------------------------------------------------------------------------
+
+        $('.btn_contact').click(function() {
+            $("#contact_details").modal({
+                fadeDuration: 200,
+            });
+        });
+    </script>
+
+</body>
+
+</html>
